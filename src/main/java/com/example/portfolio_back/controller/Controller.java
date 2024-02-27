@@ -20,10 +20,6 @@ public class Controller {
         return messageService.sendMessage(message);
     }
 
-    @GetMapping("/hi")
-    public String sayHi(){
-        return "hi";
-    }
     @GetMapping("/getMessage")
     public ResponseEntity<List<Message>> getAllMessage(){
         return messageService.getAllMessage();
